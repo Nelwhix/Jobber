@@ -1,0 +1,34 @@
+.mytags {
+    display: flex;
+    gap: 1em;
+}
+.mytags li{
+    list-style-type: none;
+    background-color: #7bb062;
+}
+.mytags li a{
+    text-decoration: none;
+    color: white;
+    padding: 0.5em;
+}
+.custombtn {
+    background-color: #7bb062;
+    border: none;
+    border-radius: 5px;
+    color: white;
+}
+.custombtn:hover {
+    background-color: #62b063;
+}
+.icon {
+    position: relative;
+    top: -3px;
+}
+.flashmessage {
+    background-color: #62b063; 
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
