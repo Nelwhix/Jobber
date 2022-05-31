@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Str;
 
+$DATABASE_URL = parse_url(' postgres://rtlouaxrradjoi:b5035700539cd6e550c26434b2ba2627b786eb3aab0fe4b6c4712ce799df6f05@ec2-52-204-195-41.compute-1.amazonaws.com:5432/d6j6hvt1ffskq0');
 return [
 
     /*
@@ -14,8 +15,8 @@ return [
     | you may use many connections at once using the Database library.
     |
     */
-
-    'default' => env('DB_CONNECTION', 'mysql'),
+    
+    'default' => env('DB_CONNECTION', 'pgsql'),
 
     /*
     |--------------------------------------------------------------------------
@@ -75,7 +76,7 @@ return [
             'prefix' => '',
             'prefix_indexes' => true,
             'search_path' => 'public',
-            'sslmode' => 'prefer',
+            'sslmode' => 'require',
         ],
 
         'sqlsrv' => [
