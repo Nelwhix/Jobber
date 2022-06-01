@@ -28,7 +28,9 @@
                             <td
                                 class=""
                             >
-                                <form action="/listings/{{$listing->id}}">
+                                <form action="/listings/{{$listing->id}}" method="POST">
+                                    @csrf
+                                    @method('DELETE')
                                     <button class="btn" style="border-color: #7bb062">
                                         <i class="bi bi-trash icon"></i> 
                                        Delete
