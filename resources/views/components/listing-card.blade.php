@@ -2,7 +2,7 @@
 <div class="col-sm-6 col-lg-4">
     <div class="card mb-3 p-3">
         <div class="card-body">
-            <img class="img-fluid mb-3" src="{{$listing->logo ? asset('storage/app/public/'. $listing->logo) : 
+            <img class="img-fluid mb-3" src="{{$listing->logo ? secure_asset('storage/'. $listing->logo) : 
         asset('/images/no-image.png')}}" alt="">
             <div>
                 <h3 class="card-title mb-2">

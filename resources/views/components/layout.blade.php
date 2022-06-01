@@ -5,10 +5,10 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <!-- Scripts -->
-        <script src="{{asset('js/app.js')}}" defer></script>
+        <script src="{{secure_asset('js/app.js')}}" defer></script>
         <!-- Styles -->
-        <link href="{{asset('css/app.css')}}" rel="stylesheet">
-        <link href="{{asset('css/customstyles.css')}}" rel="stylesheet">
+        <link href="{{secure_asset('css/app.css')}}" rel="stylesheet">
+        <link href="{{secure_asset('css/customstyles.css')}}" rel="stylesheet">
         <link rel="icon" type="image/x-icon" href="{{asset('images/favicon.ico')}}">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
