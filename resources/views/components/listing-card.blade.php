@@ -3,7 +3,7 @@
     <div class="card mb-3 p-3">
         <div class="card-body">
             <img class="img-fluid mb-3" src="{{$listing->logo ? secure_asset('storage/'. $listing->logo) : 
-        asset('/images/no-image.png')}}" alt="">
+        secure_asset('/images/no-image.png')}}" alt="">
             <div>
                 <h3 class="card-title mb-2">
                     <a href="/listings/{{$listing->id}}" class="text-black">{{$listing->title}} </a>
