@@ -8,7 +8,7 @@
             <div>
                 <img 
                 class="img-fluid mb-3 text-center ms-5" 
-                src="{{$listing->logo ? asset('storage/app/public' . $listing->logo) : asset('/images/no-image.png')}}"
+                src="{{$listing->logo ? asset('storage/app/public/' . $listing->logo) : asset('/images/no-image.png')}}"
                 alt="">
             </div>
            
